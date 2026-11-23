@@ -1,0 +1,20 @@
+{
+  "name": "llaveble-server",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Servidor de LlaveBLE: emite y revoca llaves digitales temporales (JWT ES256) para el portón ESP32",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "llave-publica": "node scripts/export-key.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "jose": "^6.0.0"
+  }
+}

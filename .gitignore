@@ -1,0 +1,26 @@
+# Dependencias y compilados
+node_modules/
+dist/
+.angular/
+.pio/
+out-tsc/
+
+# Secretos y datos locales (NO subir)
+.env
+.env.*
+!.env.example
+server/data/
+firmware/include/config.h
+
+# Archivos generados por PlatformIO con rutas locales
+firmware/.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema / editores
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
